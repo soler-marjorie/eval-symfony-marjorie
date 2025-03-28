@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une tache{% endblock %}
+
+{% block body %}
+<section class="p-8">
+    <h1>Ajouter une tache</h1>
+    <turbo-frame id="id-account">
+        {{ form_start(form) }}
+            {{ form_widget(form) }}
+        {{ form_end(form) }}
+        
+        {% include "composants/_toast.html.twig" %}
+    </turbo-frame>
+</section>
+
+{% endblock %}
