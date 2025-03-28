@@ -33,7 +33,7 @@ class Task
     private ?\DateTimeInterface $expiredAt = null;
 
     #[ORM\Column(length: 50, nullable: true)]
-    private ?string $status = false;
+    private ?string $status = null;
 
     public function getId(): ?int
     {

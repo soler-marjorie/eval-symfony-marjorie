@@ -23,7 +23,7 @@ class TaskService{
         //Tester si les champs sont tous remplis
         if($task->getTitle() != "" && $task->getContent() != "" && $task->getCreatedAt() != "" && $task->getExpiredAt() != ""){
             //Setter les paramètres
-            $task->setStatus("En cours");
+            $task->setStatus("false");
             $this->em->persist($task);
             $this->em->flush();
         }
